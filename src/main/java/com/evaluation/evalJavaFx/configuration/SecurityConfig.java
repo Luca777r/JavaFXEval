@@ -20,7 +20,7 @@ public class SecurityConfig {
 
         http.authorizeHttpRequests()
                 .requestMatchers("/").permitAll()
-                .requestMatchers("/user/**").permitAll()
+                .requestMatchers("/new").permitAll()
                 .requestMatchers("/private/post/**").hasAnyRole("USER")
                 .anyRequest().authenticated()
                 .and().formLogin();
