@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<a th:href="@{/}"> Profile</a>
+<h4>category List</h4>
+<table>
+    <tr>
+        <th>Categories</th>
+    </tr>
+    <tr th:each="categorie :${categories}">
+        <td th:text="${categorie.id}"></td>
+        <td th:text="${categorie.name}"></td>
+    </tr>
+</table>
+</body>
+</html>

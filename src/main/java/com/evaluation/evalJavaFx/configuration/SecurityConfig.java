@@ -22,6 +22,7 @@ public class SecurityConfig {
                 .requestMatchers("/").permitAll()
                 .requestMatchers("/new").permitAll()
                 .requestMatchers("/private/messages/**").hasAnyRole("USER")
+                .requestMatchers("/private/profiles/**").hasAnyRole("USER")
                 .anyRequest().authenticated()
                 .and().formLogin();
 
