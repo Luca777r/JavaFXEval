@@ -1,14 +1,11 @@
 [ {
   "username" : "user",
   "password" : "$2a$12$a5uMRm0MNoSWZmZ3c1ZsYeDppRyTxorA54Ubmp3ShZTOwaUKIvOku",
-  "categoryList" : [{
-    "id": 2,
-    "name" : "PHP"
-  } ],
+  "categoryList" : [1,6,7],
   "role" : "USER"
 }, {
   "username" : "luca",
   "password" : "$2a$10$ryXsJoc/SmOVCE/nSlrYoe9pJcfSKnPwiz.SCSsozzvKD3WvbsFh6",
-  "categoryList" : [ ],
+  "categoryList" : [ 6, 1 ],
   "role" : "USER"
 } ]

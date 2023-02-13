@@ -1,16 +1,13 @@
 [{
   "content": "message java",
-  "category" : {
-    "id": 2,
-    "name" : "PHP"
-  }
+  "category" : 1
   },
   {
     "content": "message SQL",
-    "category" : "SQL"
+    "category" : 7
   },
   {
     "content": "message Symfony",
-    "category" : "Symfony"
+    "category" : 6
   }
 ]

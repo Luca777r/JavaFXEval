@@ -36,8 +36,8 @@ public class MessageService {
         LocalUser user = userRepository.getUserByUsername(username);
 
         for (Message message : messages) {
-            for (Category category : user.getCategoryList()) {
-                if (message.getCategory().getId() == category.getId()) {
+            for (Integer id : user.getCategoryList()) {
+                if (message.getCategory().getId() == id) {
                     messagesForUser.add(new MessageDTO(message.getContent(), message.getCategory()));
                 }
             }

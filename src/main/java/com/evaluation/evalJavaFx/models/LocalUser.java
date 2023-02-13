@@ -7,13 +7,13 @@ import java.util.List;
 public class LocalUser {
     private String username;
     private String password;
-    private List<Category> categoryList = new ArrayList<Category>();
+    private List<Integer> categoryList = new ArrayList<Integer>();
 
     private String role;
 
     public LocalUser() {}
 
-    public LocalUser(String username, String password, List<Category> categoryList, String role) {
+    public LocalUser(String username, String password, List<Integer> categoryList, String role) {
         this.username = username;
         this.password = password;
         this.categoryList = categoryList;
@@ -36,11 +36,11 @@ public class LocalUser {
         this.password = password;
     }
 
-    public List<Category> getCategoryList() {
+    public List<Integer> getCategoryList() {
         return categoryList;
     }
 
-    public void setCategoryList(List<Category> categoryList) {
+    public void setCategoryList(List<Integer> categoryList) {
         this.categoryList = categoryList;
     }
 
