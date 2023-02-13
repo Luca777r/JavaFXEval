@@ -1,7 +1,10 @@
 [ {
   "username" : "user",
   "password" : "$2a$12$a5uMRm0MNoSWZmZ3c1ZsYeDppRyTxorA54Ubmp3ShZTOwaUKIvOku",
-  "categoryList" : [ ],
+  "categoryList" : [{
+    "id": 2,
+    "name" : "PHP"
+  } ],
   "role" : "USER"
 }, {
   "username" : "luca",

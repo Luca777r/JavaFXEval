@@ -34,6 +34,6 @@ public class PublicController {
     public ModelAndView addUser(@ModelAttribute LocalUserDTO localUserDTO) {
 
         userService.addUser(localUserDTO);
-        return new ModelAndView("redirect:/");
+        return new ModelAndView("redirect:/private/messages/" + localUserDTO.username());
     }
 }

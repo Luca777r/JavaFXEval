@@ -11,7 +11,6 @@ public class LocalUser {
 
     private String role;
 
-
     public LocalUser() {}
 
     public LocalUser(String username, String password, List<Category> categoryList, String role) {

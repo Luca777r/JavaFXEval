@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des messages</title>
+</head>
+<body>
+<a th:href="@{/}"> Profile</a>
+<h4>messages List</h4>
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Category</th>
+  </tr>
+  <tr th:each="message : ${messages}">
+    <td th:text="${message.content}"></td>
+    <td th:text="${message.category.name}"></td>
+  </tr>
+</table>
+</body>
+</html>

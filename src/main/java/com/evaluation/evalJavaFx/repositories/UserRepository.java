@@ -44,7 +44,6 @@ public class UserRepository {
 
         ObjectMapper mapper = new ObjectMapper();
         List<LocalUser> existingUsers = this.getUsers();
-
         existingUsers.add(user);
 
         try {
