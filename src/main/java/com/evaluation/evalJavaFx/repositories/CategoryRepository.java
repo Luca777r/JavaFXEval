@@ -5,12 +5,13 @@ import com.evaluation.evalJavaFx.models.Message;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Repository;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class CategoryRepository {
 
     public static List<Category> getCategories() {

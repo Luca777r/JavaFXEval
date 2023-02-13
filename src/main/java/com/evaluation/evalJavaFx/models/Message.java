@@ -3,14 +3,14 @@ package com.evaluation.evalJavaFx.models;
 public class Message {
 
     private String content;
-    private Category category;
+    private int categoryId;
 
     public Message() {
     }
 
-    public Message(String content, Category category) {
+    public Message(String content, int category) {
         this.content = content;
-        this.category = category;
+        this.categoryId = category;
     }
 
     public String getContent() {
@@ -21,11 +21,11 @@ public class Message {
         this.content = content;
     }
 
-    public Category getCategory() {
-        return category;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 }

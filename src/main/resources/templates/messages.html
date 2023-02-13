@@ -14,7 +14,7 @@
   </tr>
   <tr th:each="message : ${messages}">
     <td th:text="${message.content}"></td>
-    <td th:text="${message.category.name}"></td>
+    <td th:text="${message.category}"></td>
   </tr>
 </table>
 </body>
