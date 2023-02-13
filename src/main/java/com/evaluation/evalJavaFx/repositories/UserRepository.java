@@ -4,6 +4,7 @@ import com.evaluation.evalJavaFx.models.LocalUser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Repository;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,7 +12,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class UserRepository {
     public List<LocalUser> getUsers() {
 
@@ -28,7 +29,17 @@ public class UserRepository {
         }
         return users;
     }
+    public LocalUser getUserByUsername(String username) {
 
+        List<LocalUser> users = this.getUsers();
+
+        for(LocalUser user : users) {
+            if(user.getUsername().equals(username)) {
+                return user;
+            }
+        }
+        return null;
+    }
     public void save(LocalUser user) {
 
         ObjectMapper mapper = new ObjectMapper();
